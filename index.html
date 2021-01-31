@@ -1,0 +1,76 @@
+<html>
+<header>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/MyStyle.css">
+    <title>Player de musica</title>
+</header>
+
+<body>
+    <div id="Player">
+        <div id="Player-top">
+            <div id="Capa">
+                <div id="Div_NomeMusica">
+                    <p id="NomeMusica" class=""></p>
+                </div>
+                <div id="Div_NomeArtista">
+                    <p id="NomeArtista" class=""></p>
+                </div>
+                <div id="Div_NomeAlbum">
+                    <p id="NomeAlbum" class=""></p>
+                </div>
+            </div>
+            <div id="div-Volume">
+                <input id="Volume" name="Volume" class="Volume" type="range" name="Volume" id="Volume" step="0.01"
+                    value="1" min="0" max="1">
+            </div>
+        </div>
+        <div id="Player-donw">
+            <div id="botoes">
+                <!-- BOTÃO DE VOLTA -->
+                <button class="" onclick="Mudar(-1)" id="Voltar">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="" fill="#fff">
+                        <path fill-rule="evenodd" d="M.5 3.5A.5.5 0 0 0 0 4v8a.5.5 0 0 0 1 0V4a.5.5 0 0 0-.5-.5z" />
+                        <path
+                            d="M.904 8.697l6.363 3.692c.54.313 1.233-.066 1.233-.697V4.308c0-.63-.692-1.01-1.233-.696L.904 7.304a.802.802 0 0 0 0 1.393z" />
+                        <path
+                            d="M8.404 8.697l6.363 3.692c.54.313 1.233-.066 1.233-.697V4.308c0-.63-.693-1.01-1.233-.696L8.404 7.304a.802.802 0 0 0 0 1.393z" />
+                    </svg>
+                </button>
+                <!-- BOTÃO PLAY -->
+                <button class="" onclick="Play()" id="Play">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="" fill="currentColor">
+                        <path
+                            d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                </button>
+                <!-- BOTÃO PAUSE -->
+                <button class="" onclick="Pause()" id="Pause">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="" fill="currentColor">
+                        <path
+                            d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z" />
+                    </svg>
+                </button>
+                <!-- BOTÃO DE PROXIMO -->
+                <button class="" onclick="Mudar(1)" id="Proximo">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="" fill="currentColor">
+                        <path fill-rule="evenodd" d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z" />
+                        <path
+                            d="M7.596 8.697l-6.363 3.692C.693 12.702 0 12.322 0 11.692V4.308c0-.63.693-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                        <path
+                            d="M15.096 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.693-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="Div-time">
+                <input class="" type="range" name="Time" id="Time" step="1" value=0.001 min=0 max=100>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="JS/Musicas.js"></script>
+<script type="text/javascript" src="JS/Comandos.js"></script>
+<!-- <a href="teste.html">teste aqui</a> -->
+
+</html>
